@@ -13,13 +13,13 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`sidebar text-white vh-100 p-3  d-flex flex-column ${collapsed ? 'collapsed-sidebar' : ''}`}
+      className={`sidebar shadow-lg text-white vh-100 p-3  d-flex flex-column ${collapsed ? 'collapsed-sidebar' : ''}`}
       style={{ width: collapsed ? '80px' : '250px', position: 'sticky', top: 0, transition: 'width 0.3s' }}
     >
       <div className="d-flex align-items-center justify-content-between mb-4">
         {!collapsed && <img src={Logo} alt="Logo" className="sidebarLogo" style={{ maxWidth: '120px' }} />}
         <button onClick={toggleSidebar} className="btn btn-sm text-white">
-          <i className="bi bi-list fs-4"></i>
+          <i className="bi bi-list fs-4 text-dark"></i>
         </button>
       </div>
 
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <NavLink
             to="/dashboard/home"
             className={({ isActive }) =>
-              `nav-link d-flex align-items-center gap-2 ${isActive ? 'active-link' : 'text-white'}`
+              `nav-link d-flex align-items-center gap-2 ${isActive ? 'active-link' : 'text-dark'}`
             }
           >
             <i className="bi bi-house-door-fill"></i>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <NavLink
             to="/dashboard/task"
             className={({ isActive }) =>
-              `nav-link d-flex align-items-center gap-2 ${isActive ? 'active-link' : 'text-white'}`
+              `nav-link d-flex align-items-center gap-2 ${isActive ? 'active-link' : 'text-dark'}`
             }
           >
             <i className="bi bi-list-check"></i>

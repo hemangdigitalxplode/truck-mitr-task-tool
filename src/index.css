@@ -23,7 +23,7 @@
 }
 
 .sidebar {
-  background-color: #2869b4;
+  background-color: #fff;
 }
 
 .sidebarLogo {
@@ -35,13 +35,16 @@
 }
 
 .active-link {
-  background-color: #fff !important;
-  color: black !important;
+  background-color: #2869b4 !important;
+  color: white !important;
   border: 2px solid #2869b4;
   border-radius: 5px;
   padding: 8px 12px;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
+}
+.nav-link{
+  color: black;
 }
 
 .fade-in-table {
