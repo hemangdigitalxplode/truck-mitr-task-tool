@@ -58,7 +58,7 @@ const Dashboard = () => {
             {getGreeting()}, {employee?.name || 'Employee'}!
           </h3>
           <p className="text-muted small mt-1">
-            Welcome to XplodeFlowPilot — manage your tasks efficiently, stay on track, and never miss a deadline.
+            Welcome to TruckMitr — manage your tasks efficiently, stay on track, and never miss a deadline.
           </p>
           <div className="row mt-4">
             <InfoCard
